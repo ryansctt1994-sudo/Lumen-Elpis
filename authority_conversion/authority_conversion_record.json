@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_type": "authority_conversion_record",
+  "status": "EXAMPLE_ONLY",
+  "authority": "NOT_EARNED",
+  "deployment": "PROHIBITED",
+  "conversion_attempted": false,
+  "conversion_allowed": false,
+  "blocked_items": [
+    "proposal_to_authority",
+    "review_to_execution",
+    "scaffold_to_deployment"
+  ],
+  "required_before_future_change": [
+    "formal_schema_validation",
+    "receipt_hashing",
+    "replay_verification",
+    "negative_path_testing",
+    "human_approval_record",
+    "independent_audit"
+  ]
+}
