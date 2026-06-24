@@ -1,0 +1,36 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_type": "escalation_policy",
+  "status": "E2_SCAFFOLD",
+  "authority": "NOT_EARNED",
+  "deployment": "PROHIBITED",
+  "external_integrations": "PROHIBITED",
+  "router_mode": "file_based_only",
+  "allowed_decisions": [
+    "approve_for_review_only",
+    "request_revision",
+    "reject",
+    "defer",
+    "escalate_to_human_authority"
+  ],
+  "prohibited_decisions": [
+    "execute",
+    "deploy",
+    "self_authorize",
+    "promote_evidence_level",
+    "convert_proposal_to_authority"
+  ],
+  "required_gates": {
+    "canonical_output": true,
+    "human_review_required": true,
+    "external_side_effects_allowed": false,
+    "authority_conversion_allowed": false
+  },
+  "definition_of_done": [
+    "request validates against local dataclass structure",
+    "request writes to local outbox only",
+    "canonical_output false causes fail-closed rejection",
+    "review decision is one of allowed_decisions",
+    "no external integrations are invoked"
+  ]
+}
