@@ -1,0 +1,23 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_type": "escalation_request",
+  "request_id": "ESC-STEP5-EXAMPLE-001",
+  "created_at": "2026-06-16T00:00:00Z",
+  "origin": "STEP_5_ESCALATION_OPS_PLUS",
+  "evidence_level": "E2",
+  "authority": "NOT_EARNED",
+  "deployment": "PROHIBITED",
+  "canonical_output": true,
+  "summary": "Example request for human review of escalation operations scaffolding.",
+  "requested_decision": "approve_for_review_only",
+  "risk_flags": [
+    "validation_required",
+    "authority_conversion_prohibited",
+    "external_integration_prohibited"
+  ],
+  "artifacts": [
+    "escalations/escalation_policy.json",
+    "escalation_types.py",
+    "escalation_router.py"
+  ]
+}

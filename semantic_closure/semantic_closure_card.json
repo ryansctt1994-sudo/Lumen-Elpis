@@ -1,0 +1,19 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_type": "semantic_closure_card",
+  "status": "EXAMPLE_ONLY",
+  "authority": "NOT_EARNED",
+  "deployment": "PROHIBITED",
+  "claim": "Semantic closure has not been earned by this artifact.",
+  "closure_conditions": [
+    "scope explicitly bounded",
+    "open risks listed",
+    "non-authority preserved",
+    "review path identified"
+  ],
+  "open_risks": [
+    "schema not hardened",
+    "receipt hash not implemented",
+    "independent audit not completed"
+  ]
+}

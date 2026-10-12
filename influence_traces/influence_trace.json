@@ -1,0 +1,23 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_type": "influence_trace",
+  "status": "EXAMPLE_ONLY",
+  "authority": "NOT_EARNED",
+  "deployment": "PROHIBITED",
+  "trace_id": "TRACE-STEP5-EXAMPLE-001",
+  "inputs": [
+    "Final Updated Professional Handoff package",
+    "STEP_5_ESCALATION_OPS_PLUS milestone",
+    "file-based E2 scaffolding requirement"
+  ],
+  "outputs": [
+    "escalation policy example",
+    "request and review examples",
+    "router and tests"
+  ],
+  "influence_limits": [
+    "trace is descriptive only",
+    "trace does not prove correctness",
+    "trace does not grant authority"
+  ]
+}
