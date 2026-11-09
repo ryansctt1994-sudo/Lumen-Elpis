@@ -1,0 +1,29 @@
+name: Elpis E2 scaffold verification (non-authoritative)
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  local-router-boundaries:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install test dependency
+        run: python -m pip install "pytest>=8,<10"
+      - name: Compile bounded source and regression tests
+        run: python -m compileall -q escalation_router.py escalation_types.py tests
+      - name: Test local E2 router only
+        run: python -m pytest -q tests/test_escalation_operations.py

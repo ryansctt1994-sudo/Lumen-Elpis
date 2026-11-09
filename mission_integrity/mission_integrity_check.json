@@ -1,0 +1,19 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_type": "mission_integrity_check",
+  "status": "EXAMPLE_ONLY",
+  "authority": "NOT_EARNED",
+  "deployment": "PROHIBITED",
+  "mission_alignment": {
+    "proposal_generation_allowed": true,
+    "review_required": true,
+    "authority_conversion_allowed": false,
+    "external_side_effects_allowed": false
+  },
+  "integrity_flags": [
+    "file_based_only",
+    "human_review_required",
+    "evidence_ceiling_E2",
+    "deployment_prohibited"
+  ]
+}

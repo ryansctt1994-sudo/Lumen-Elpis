@@ -1,0 +1,17 @@
+{
+  "schema_version": "0.1.0",
+  "artifact_type": "escalation_review",
+  "review_id": "REV-STEP5-EXAMPLE-001",
+  "request_id": "ESC-STEP5-EXAMPLE-001",
+  "reviewed_at": "2026-06-16T00:00:00Z",
+  "reviewer_role": "human_reviewer",
+  "decision": "request_revision",
+  "authority": "NOT_EARNED",
+  "deployment": "PROHIBITED",
+  "notes": "Example review record. This decision does not authorize execution or deployment.",
+  "required_followups": [
+    "add schema validation",
+    "add receipt hashes",
+    "add negative-path tests"
+  ]
+}
